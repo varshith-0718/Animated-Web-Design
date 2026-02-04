@@ -1,0 +1,76 @@
+{
+  "personalInfo": {
+    "name": "Raavi Varshith Reddy R.",
+    "headline": "AI / ML Engineer | MLOps | Agentic AI | Autogen | NLP",
+    "bio": "I'm a Data Scientist and AI/ML Engineer with experience building and deploying machine learning systems across finance, healthcare, and e-commerce. I enjoy working on problems where the data is messy and the requirements aren't fully defined.",
+    "socialLinks": {
+      "linkedin": "https://linkedin.com/in/yourprofile",
+      "github": "https://github.com/yourusername"
+    }
+  },
+  "skills": [
+    { "category": "Programming", "items": ["Python", "SQL", "C++"] },
+    { "category": "ML & DL", "items": ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "LightGBM", "CatBoost", "BERT", "GPT Models"] },
+    { "category": "GenAI / LLMs", "items": ["OpenAI APIs", "Hugging Face Transformers", "LangChain", "LangGraph", "LangSmith", "CrewAI", "AutoGen", "RAG Architectures"] },
+    { "category": "AI Agents", "items": ["LangGraph Agents", "CrewAI Agents", "Rule-based Decision Agents", "Multi-Agent Evaluation Pipelines"] },
+    { "category": "Vector Databases", "items": ["FAISS", "Pinecone", "Chroma", "Milvus"] },
+    { "category": "ML Algorithms", "items": ["Regression", "Classification", "Ensemble Methods", "Gradient Boosting", "Clustering", "Time-Series Models", "CNN/RNN architectures", "Transformer-based models"] },
+    { "category": "Data Engineering", "items": ["PySpark", "Kafka", "Snowflake", "BigQuery", "Redshift", "ETL/ELT Design"] },
+    { "category": "MLOps & Automation", "items": ["MLflow", "Airflow", "Kubernetes", "Docker", "Terraform", "FastAPI", "GitHub Actions", "Azure DevOps", "n8n", "Cursor AI", "MCP"] },
+    { "category": "Cloud", "items": ["AWS S3/Lambda/ECS/SageMaker", "Azure ML/AKS/Azure OpenAI", "GCP BigQuery/Vertex AI"] },
+    { "category": "Evaluation & Safety", "items": ["SHAP", "LIME", "RAGAS", "BLEU/ROUGE", "ROC-AUC", "Prompt Safety Testing", "Bias Analysis"] },
+    { "category": "Visualization", "items": ["Tableau", "Power BI", "Plotly", "Matplotlib", "Seaborn"] },
+    { "category": "Security & Compliance", "items": ["HIPAA", "PII/PHI Redaction", "HITL Review Loops"] }
+  ],
+  "experiences": [
+    {
+      "title": "AI/ML Engineer",
+      "company": "JPMorgan Chase",
+      "duration": "Jan 2025 – Dec 2025",
+      "description": "Developed a secure Generative AI assistant for internal operations for finance team, enabling natural language querying over financial documents and transaction datasets.",
+      "highlights": [
+        "Reduced manual data lookup time by 35% across 1.3M+ financial records.",
+        "Implemented RAG using LangChain and LangGraph.",
+        "Built task-specific AI agents for compliance checks.",
+        "Integrated GitHub Copilot into development workflows.",
+        "Used MCP and n8n for automated ingestion and embedding refresh."
+      ],
+      "environment": ["Python", "LangChain", "LangGraph", "LangSmith", "RAG", "AI Agents", "GitHub Copilot", "Cursor AI", "MCP", "n8n", "AWS"]
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company": "Humana",
+      "duration": "Aug 2022 – Dec 2023",
+      "description": "Built and trained supervised ML models to predict patient risk scores and readmission likelihood.",
+      "highlights": [
+        "Improved early risk identification accuracy by ~22% across 1.2M+ records.",
+        "Performed advanced feature engineering on clinical datasets.",
+        "Implemented end-to-end MLOps pipelines.",
+        "Deployed scalable inference services on Kubernetes via Terraform."
+      ],
+      "environment": ["Python", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "MLflow", "Azure ML", "Docker", "Kubernetes", "Terraform"]
+    },
+    {
+      "title": "Data Scientist",
+      "company": "eBay",
+      "duration": "Jun 2021 – Jul 2022",
+      "description": "Analyzed large-scale retail transaction and customer data to identify sales trends and product performance.",
+      "highlights": [
+        "Analyzed trends across 10M+ point-of-sale transactions.",
+        "Built scalable data pipelines for 15M+ daily records.",
+        "Designed optimized models in BigQuery to compute KPIs.",
+        "Developed interactive dashboards for 1,000+ retail locations."
+      ],
+      "environment": ["Python", "SQL", "Pandas", "NumPy", "BigQuery", "Cloud Storage", "Looker Studio", "ETL Pipelines"]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Portfolio Website",
+      "description": "A modern, dark-themed personal portfolio website built with React, Tailwind CSS, and Framer Motion.",
+      "highlights": ["Responsive Design", "Smooth Animations", "SEO Optimized"],
+      "link": "https://github.com/yourusername/portfolio",
+      "duration": "Feb 2026"
+    }
+  ]
+}
