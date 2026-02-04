@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 9) Smooth scroll */
+html, body {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2rem;
+}
+
+/* Optional: Smooth hover lift for all buttons/links */
+button:hover, a:hover {
+  transform: translateY(-2px);
+  transition: transform 150ms ease;
+}
+
+/* 7) Section Titles Accent Line */
+.section-title {
+  @apply flex items-center gap-3 mb-8;
+}
+.section-title div {
+  @apply w-8 h-0.5 bg-primary;
+}
+
+/* 8 & 9) Button & link hover interactions */
+button {
+  @apply px-5 py-2 bg-primary text-white rounded-lg font-medium;
+  transition: transform 150ms ease, background-color 200ms ease;
+}
+
+button:hover {
+  @apply bg-indigo-600;
+  transform: translateY(-2px);
+}
+
+a {
+  @apply text-primary font-semibold;
+  transition: transform 150ms ease;
+}
+
+a:hover {
+  @apply underline;
+  transform: translateY(-2px);
+}
