@@ -1,13 +1,11 @@
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
-import { useProjects } from "@/hooks/use-portfolio";
 import { motion } from "framer-motion";
-import { ExternalLink, Github, Folder } from "lucide-react";
+import { ExternalLink, Folder } from "lucide-react";
+import portfolioData from "../data/portfolio.json";
 
 export function Projects() {
-  const { data: projects, isLoading } = useProjects();
-
-  if (isLoading) return null;
+  const projects = portfolioData.projects;
 
   return (
     <Section id="projects" className="bg-secondary/20">
@@ -20,13 +18,14 @@ export function Projects() {
       </Reveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects?.map((project, index) => (
+        {projects.map((project, index) => (
           <motion.div
-            key={project.id}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            key={index}
+            initial={{ opacity: 0, y: 20, scale: 0.95 }}
+            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, margin: "-50px" }}
             className="group relative bg-card rounded-xl p-6 border border-border/50 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/5 flex flex-col h-full"
           >
             <div className="flex justify-between items-start mb-6">
@@ -34,10 +33,6 @@ export function Projects() {
                 <Folder size={24} />
               </div>
               <div className="flex gap-4">
-                {/* 
-                  Assuming 'link' could be a GitHub link or live demo. 
-                  In a real app, you might want separate fields.
-                */}
                 {project.link && (
                   <a 
                     href={project.link} 

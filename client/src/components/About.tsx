@@ -1,9 +1,9 @@
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
-import { usePersonalInfo } from "@/hooks/use-portfolio";
+import portfolioData from "../data/portfolio.json";
 
 export function About() {
-  const { data: info } = usePersonalInfo();
+  const info = portfolioData.personalInfo;
 
   return (
     <Section id="about" className="bg-secondary/20">
@@ -20,7 +20,7 @@ export function About() {
           <Reveal>
             <div className="prose prose-invert prose-lg text-muted-foreground">
               <p>
-                {info?.bio || "Loading bio..."}
+                {info.bio}
               </p>
               <p className="mt-4">
                 I'm passionate about creating intuitive and dynamic user experiences. 
@@ -34,18 +34,16 @@ export function About() {
         <div className="relative group mx-auto md:mx-0">
           <Reveal>
             <div className="relative w-64 h-64 md:w-80 md:h-80">
-              {/* Image Frame/Border Effect */}
               <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-5 translate-y-5 transition-transform group-hover:translate-x-3 group-hover:translate-y-3" />
-              
-              {/* Placeholder for Profile Image */}
               <div className="absolute inset-0 bg-muted rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-300">
-                {/* 
-                  Add an actual image here if user uploads one. 
-                  For now, using a stylish gradient placeholder 
-                */}
-                <div className="w-full h-full bg-gradient-to-br from-slate-800 to-slate-900 flex items-center justify-center text-6xl">
-                  👨‍💻
-                </div>
+                <img 
+                  src="/images/name.jpg" 
+                  alt="About Me"
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = "https://api.dicebear.com/7.x/avataaars/svg?seed=About";
+                  }}
+                />
               </div>
             </div>
           </Reveal>

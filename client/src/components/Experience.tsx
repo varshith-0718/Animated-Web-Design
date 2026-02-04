@@ -1,12 +1,10 @@
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
-import { useExperiences } from "@/hooks/use-portfolio";
 import { motion } from "framer-motion";
+import portfolioData from "../data/portfolio.json";
 
 export function Experience() {
-  const { data: experiences, isLoading } = useExperiences();
-
-  if (isLoading) return null;
+  const experiences = portfolioData.experiences;
 
   return (
     <Section id="experience">
@@ -20,24 +18,22 @@ export function Experience() {
         </Reveal>
 
         <div className="space-y-12 border-l border-border ml-3 md:ml-0 pl-8 md:pl-0">
-          {experiences?.map((exp, index) => (
+          {experiences.map((exp, index) => (
             <motion.div
-              key={exp.id}
+              key={index}
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
+              exit={{ opacity: 0, x: -20 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              viewport={{ once: true }}
+              viewport={{ once: false, margin: "-50px" }}
               className="relative md:pl-8 group"
             >
-              {/* Timeline dot */}
               <div className="absolute -left-[33px] top-1 h-4 w-4 rounded-full border-2 border-primary bg-background group-hover:bg-primary transition-colors hidden md:block" />
-              
-              {/* Mobile Timeline dot */}
               <div className="absolute -left-[39px] top-1 h-3 w-3 rounded-full bg-primary md:hidden" />
 
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <h3 className="text-xl font-bold text-foreground">
-                  {exp.role} <span className="text-primary">@ {exp.company}</span>
+                  {exp.title} <span className="text-primary">@ {exp.company}</span>
                 </h3>
                 <span className="font-mono text-sm text-muted-foreground whitespace-nowrap mt-1 sm:mt-0">
                   {exp.duration}

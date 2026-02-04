@@ -1,12 +1,10 @@
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
-import { useSkills } from "@/hooks/use-portfolio";
 import { motion } from "framer-motion";
+import portfolioData from "../data/portfolio.json";
 
 export function Skills() {
-  const { data: skills, isLoading } = useSkills();
-
-  if (isLoading) return null;
+  const skills = portfolioData.skills;
 
   return (
     <Section id="skills">
@@ -19,13 +17,14 @@ export function Skills() {
       </Reveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {skills?.map((category, index) => (
+        {skills.map((category, index) => (
           <motion.div
-            key={category.id}
+            key={index}
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.95 }}
             transition={{ duration: 0.5, delay: index * 0.1 }}
-            viewport={{ once: true }}
+            viewport={{ once: false, margin: "-50px" }}
             className="bg-card/50 rounded-2xl p-6 border border-border/50 hover:border-border transition-all"
           >
             <h3 className="text-xl font-bold mb-6 text-primary border-b border-border/50 pb-2 inline-block">

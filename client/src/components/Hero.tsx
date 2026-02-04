@@ -1,17 +1,15 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
 import { FloatingShapes } from "./FloatingShapes";
-import { usePersonalInfo } from "@/hooks/use-portfolio";
 import { Reveal } from "./Reveal";
+import portfolioData from "../data/portfolio.json";
 
 export function Hero() {
-  const { data: info, isLoading } = usePersonalInfo();
+  const info = portfolioData.personalInfo;
 
   const scrollTo = (id: string) => {
     document.querySelector(id)?.scrollIntoView({ behavior: "smooth" });
   };
-
-  if (isLoading) return <div className="h-screen bg-background" />;
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -27,19 +25,19 @@ export function Hero() {
           
           <Reveal>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground">
-              {info?.name || "Loading..."}
+              {info.name}
             </h1>
           </Reveal>
 
           <Reveal>
             <h2 className="text-3xl md:text-5xl font-bold text-muted-foreground">
-              {info?.headline || "I build things for the web."}
+              {info.headline}
             </h2>
           </Reveal>
 
           <Reveal>
             <p className="max-w-xl text-lg text-muted-foreground leading-relaxed mt-6">
-              {info?.bio || "I'm a software engineer specializing in building exceptional digital experiences."}
+              {info.bio}
             </p>
           </Reveal>
 
@@ -54,41 +52,43 @@ export function Hero() {
               </button>
               
               <div className="flex items-center gap-4 px-4">
-                {info?.socialLinks?.github && (
-                  <a
-                    href={info.socialLinks.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-primary transition-all"
-                  >
-                    <Github className="w-6 h-6" />
-                  </a>
-                )}
-                {info?.socialLinks?.linkedin && (
-                  <a
-                    href={info.socialLinks.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-primary transition-all"
-                  >
-                    <Linkedin className="w-6 h-6" />
-                  </a>
-                )}
-                {info?.socialLinks?.email && (
-                  <a
-                    href={`mailto:${info.socialLinks.email}`}
-                    className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-primary transition-all"
-                  >
-                    <Mail className="w-6 h-6" />
-                  </a>
-                )}
+                <a
+                  href={info.socialLinks.github}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-primary transition-all"
+                >
+                  <Github className="w-6 h-6" />
+                </a>
+                <a
+                  href={info.socialLinks.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-2 rounded-full hover:bg-secondary text-muted-foreground hover:text-primary transition-all"
+                >
+                  <Linkedin className="w-6 h-6" />
+                </a>
               </div>
+            </div>
+          </Reveal>
+        </div>
+
+        <div className="hidden md:block relative group">
+          <Reveal>
+            <div className="relative aspect-square w-80 overflow-hidden rounded-2xl border-2 border-primary/20 bg-card">
+              <img 
+                src="/images/name.jpg" 
+                alt={info.name}
+                className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "https://api.dicebear.com/7.x/avataaars/svg?seed=Raavi";
+                }}
+              />
             </div>
           </Reveal>
         </div>
       </div>
       
-      {/* Scroll indicator */}
       <motion.div 
         className="absolute bottom-10 left-1/2 -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}
