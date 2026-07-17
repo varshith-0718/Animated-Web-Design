@@ -31,15 +31,15 @@ export function About() {
           </Reveal>
         </div>
 
-        <div className="relative group mx-auto md:mx-0">
+        <div className="flex justify-center md:justify-start">
           <Reveal>
-            <div className="relative w-64 h-64 md:w-80 md:h-80">
-              <div className="absolute inset-0 border-2 border-primary rounded-lg translate-x-5 translate-y-5 transition-transform group-hover:translate-x-3 group-hover:translate-y-3" />
-              <div className="absolute inset-0 bg-muted rounded-lg overflow-hidden grayscale hover:grayscale-0 transition-all duration-300">
-                <img 
-                  src="/images/name.jpg" 
+            <div className="relative group" style={{ width: "260px" }}>
+              <div className="absolute inset-0 border-2 border-primary rounded-xl translate-x-4 translate-y-4 transition-transform group-hover:translate-x-2 group-hover:translate-y-2 pointer-events-none rounded-xl" />
+              <div className="relative rounded-xl overflow-hidden bg-muted grayscale hover:grayscale-0 transition-all duration-300">
+                <img
+                  src="/images/img2.jpeg"
                   alt="About Me"
-                  className="w-full h-full object-cover"
+                  style={{ width: "260px", height: "340px", objectFit: "cover", objectPosition: "top center", display: "block" }}
                   onError={(e) => {
                     (e.target as HTMLImageElement).src = "https://api.dicebear.com/7.x/avataaars/svg?seed=About";
                   }}

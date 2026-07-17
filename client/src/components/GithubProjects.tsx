@@ -1,26 +1,29 @@
 import { Section } from "./Section";
 import { Reveal } from "./Reveal";
 import { motion } from "framer-motion";
-import { Folder } from "lucide-react";
+import { Github } from "lucide-react";
 import portfolioData from "../data/portfolio.json";
 
-export function Projects() {
-  const projects = portfolioData.projects;
+export function GithubProjects() {
+  const githubProjects = portfolioData.githubProjects;
 
   return (
-    <Section id="projects" className="bg-secondary/20">
+    <Section id="github-projects">
       <Reveal>
         <div className="flex items-center gap-4 mb-12">
-          <span className="text-primary font-mono text-xl">0.3</span>
-          <h2 className="text-3xl md:text-4xl font-bold">Projects</h2>
+          <span className="text-primary font-mono text-xl">04.</span>
+          <h2 className="text-3xl md:text-4xl font-bold">Some Things I've Built</h2>
           <div className="h-px bg-border flex-1 max-w-[200px]" />
         </div>
       </Reveal>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project, index) => (
-          <motion.div
+        {githubProjects.map((project, index) => (
+          <motion.a
             key={index}
+            href={project.link}
+            target="_blank"
+            rel="noopener noreferrer"
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             whileInView={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
@@ -30,7 +33,7 @@ export function Projects() {
           >
             <div className="flex justify-between items-start mb-6">
               <div className="p-3 bg-secondary/50 rounded-lg text-primary group-hover:bg-primary/10 transition-colors">
-                <Folder size={24} />
+                <Github size={24} />
               </div>
             </div>
 
@@ -42,19 +45,14 @@ export function Projects() {
               {project.description}
             </p>
 
-            {project.highlights && (
+            {project.language && (
               <div className="flex flex-wrap gap-2 mt-auto pt-4 border-t border-border/50">
-                {project.highlights.slice(0, 4).map((tech) => (
-                  <span 
-                    key={tech}
-                    className="text-xs font-mono text-muted-foreground"
-                  >
-                    {tech}
-                  </span>
-                ))}
+                <span className="text-xs font-mono text-muted-foreground">
+                  {project.language}
+                </span>
               </div>
             )}
-          </motion.div>
+          </motion.a>
         ))}
       </div>
     </Section>

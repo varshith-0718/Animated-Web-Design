@@ -1,16 +1,16 @@
 {
   "personalInfo": {
-    "name": "Raavi Varshith Reddy R.",
-    "headline": "AI / ML Engineer | MLOps | Agentic AI | Autogen | NLP",
-    "bio": "I'm a Data Scientist and AI/ML Engineer with experience building and deploying machine learning systems across finance, healthcare, and e-commerce. I enjoy working on problems where the data is messy and the requirements aren't fully defined.",
+    "name": "Varshith Reddy Raavi",
+    "headline": "Data Scientist | AI/ML Engineer | MLOps Engineer",
+    "bio": "Data Scientist with hands-on experience delivering enterprise-grade solutions across Banking, Healthcare, and Insurance domains. Strong background in Machine Learning, Data Engineering, and Generative AI workflows deployed on AWS, Azure, and GCP. Proven ability to translate business problems into scalable data, ML, and AI-driven solutions using modern cloud-native tooling.",
     "socialLinks": {
-      "linkedin": "https://linkedin.com/in/yourprofile",
-      "github": "https://github.com/yourusername"
+      "linkedin": "https://www.linkedin.com/in/varshith-reddy-r-0987a53a8/",
+      "github": "https://github.com/varshith-0718"
     }
   },
   "skills": [
     { "category": "Programming", "items": ["Python", "SQL", "C++"] },
-    { "category": "ML & DL", "items": ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "LightGBM", "CatBoost", "BERT", "GPT Models"] },
+    { "category": "ML & DL", "items": ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "LightGBM", "CatBoost", "BERT", "GPT Models", "Reinforcement Learning", "GRPO", "PPO", "Transformers", "Multimodal architectures"] },
     { "category": "GenAI / LLMs", "items": ["OpenAI APIs", "Hugging Face Transformers", "LangChain", "LangGraph", "LangSmith", "CrewAI", "AutoGen", "RAG Architectures"] },
     { "category": "AI Agents", "items": ["LangGraph Agents", "CrewAI Agents", "Rule-based Decision Agents", "Multi-Agent Evaluation Pipelines"] },
     { "category": "Vector Databases", "items": ["FAISS", "Pinecone", "Chroma", "Milvus"] },
@@ -24,53 +24,112 @@
   ],
   "experiences": [
     {
-      "title": "AI/ML Engineer",
-      "company": "JPMorgan Chase",
-      "duration": "Jan 2025 – Dec 2025",
-      "description": "Developed a secure Generative AI assistant for internal operations for finance team, enabling natural language querying over financial documents and transaction datasets.",
+      "title": "Graduate Research Assistant | NLP Researcher",
+      "company": "Texas A&M University-Corpus Christi",
+      "duration": "May 2025 – Dec 2025",
+      "description": "MoodComposer: AI-Powered Song Generation Platform | GPT-2, Bark, MusicGen",
       "highlights": [
-        "Reduced manual data lookup time by 35% across 1.3M+ financial records.",
-        "Implemented RAG using LangChain and LangGraph.",
-        "Built task-specific AI agents for compliance checks.",
-        "Integrated GitHub Copilot into development workflows.",
-        "Used MCP and n8n for automated ingestion and embedding refresh."
+        "Developed an AI-powered music generation platform capable of creating emotionally aligned songs through real-time sentiment analysis and natural language processing techniques.",
+        "Fine-tuned GPT-2 on the GeniusLyrics dataset to generate context-aware and genre-specific lyrics, achieving approximately 92% emotion alignment with user intent.",
+        "Integrated Bark and MusicGen models for end-to-end audio synthesis with phoneme-aware vocal generation, reducing inference latency by 30%.",
+        "Designed scalable inference workflows for lyric generation, sentiment classification, and audio rendering to support interactive user experiences."
       ],
-      "environment": ["Python", "LangChain", "LangGraph", "LangSmith", "RAG", "AI Agents", "GitHub Copilot", "Cursor AI", "MCP", "n8n", "AWS"]
+      "environment": ["Python", "GPT-2", "Bark", "MusicGen", "Hugging Face Transformers", "PyTorch", "NLP", "Sentiment Analysis", "Audio Synthesis"]
     },
     {
-      "title": "Machine Learning Engineer",
-      "company": "Humana",
-      "duration": "Aug 2022 – Dec 2023",
-      "description": "Built and trained supervised ML models to predict patient risk scores and readmission likelihood.",
+      "title": "Graduate Research Assistant | MLSecOps",
+      "company": "Texas A&M University-Corpus Christi",
+      "duration": "Sep 2024 – Apr 2025",
+      "description": "Generative jailbreak prompts for large language models",
       "highlights": [
-        "Improved early risk identification accuracy by ~22% across 1.2M+ records.",
-        "Performed advanced feature engineering on clinical datasets.",
-        "Implemented end-to-end MLOps pipelines.",
-        "Deployed scalable inference services on Kubernetes via Terraform."
+        "Engineered an adversarial prompt generation framework leveraging reinforcement learning using PPO and evolutionary search algorithms to evaluate LLM robustness.",
+        "Evaluated prompt attacks against multiple state-of-the-art LLMs, including GPT-4, Claude, and LLaMA models, achieving an attack success rate exceeding 80% in controlled sandbox environments.",
+        "Developed a multi-objective evaluation framework measuring attack success rate, stealthiness, and reproducibility to benchmark prompt effectiveness.",
+        "Proposed mitigation strategies and safety mechanisms for improving LLM robustness against adversarial prompt injection attacks."
       ],
-      "environment": ["Python", "Scikit-learn", "XGBoost", "Pandas", "NumPy", "MLflow", "Azure ML", "Docker", "Kubernetes", "Terraform"]
+      "environment": ["Python", "Reinforcement Learning", "PPO", "Evolutionary Algorithms", "GPT-4", "Claude", "LLaMA", "Prompt Engineering", "LLM Safety Evaluation"]
     },
     {
-      "title": "Data Scientist",
-      "company": "eBay",
-      "duration": "Jun 2021 – Jul 2022",
-      "description": "Analyzed large-scale retail transaction and customer data to identify sales trends and product performance.",
+      "title": "Associate Data Scientist",
+      "company": "GangaSoft",
+      "duration": "Apr 2022 – Oct 2023",
+      "description": "GangaSoft: E-Commerce Sales & Demand Analytics Platform",
       "highlights": [
-        "Analyzed trends across 10M+ point-of-sale transactions.",
-        "Built scalable data pipelines for 15M+ daily records.",
-        "Designed optimized models in BigQuery to compute KPIs.",
-        "Developed interactive dashboards for 1,000+ retail locations."
+        "Analyzed large-scale retail transaction and customer data to identify sales trends, product performance, and regional demand patterns across 10M+ point-of-sale transactions.",
+        "Built scalable data pipelines for ingesting, cleaning, and transforming 15M+ daily records from sales, inventory, and pricing systems.",
+        "Performed statistical analysis and exploratory data analysis to uncover seasonality, promotion impact, and customer purchasing behavior, supporting merchandising and pricing decisions.",
+        "Designed optimized analytical models and queries in BigQuery to compute KPIs such as revenue, basket size, and sell-through rates, reducing report generation time by ~30%.",
+        "Developed interactive dashboards and reports to track sales performance and inventory health across 1,000+ retail locations.",
+        "Optimized ETL workflows using SQL and Python, improving pipeline performance and reducing data latency for downstream analytics."
       ],
-      "environment": ["Python", "SQL", "Pandas", "NumPy", "BigQuery", "Cloud Storage", "Looker Studio", "ETL Pipelines"]
+      "environment": ["Python", "SQL", "Pandas", "NumPy", "BigQuery", "Cloud Storage", "Looker Studio", "Data Modeling", "Statistical Analysis", "ETL Pipelines"]
     }
   ],
   "projects": [
     {
-      "title": "Portfolio Website",
-      "description": "A modern, dark-themed personal portfolio website built with React, Tailwind CSS, and Framer Motion.",
-      "highlights": ["Responsive Design", "Smooth Animations", "SEO Optimized"],
-      "link": "https://github.com/yourusername/portfolio",
-      "duration": "Feb 2026"
+      "title": "AI-Powered Network Traffic Anomaly Detection with Explainability",
+      "description": "Built a network intrusion detection system designed to be both highly accurate and interpretable enough for security analysts to trust and act on.",
+      "highlights": [
+        "Designed 3-layer hybrid detection model (VAE + LSTM + XGBoost) on UNSW-NB15 dataset, achieving 93.6% precision and 35% fewer false positives vs. baseline.",
+        "Integrated SHAP explainability for per-prediction feature attribution; deployed via FastAPI REST endpoint in a Dockerized backend."
+      ],
+      "environment": ["Python", "VAE", "LSTM", "XGBoost", "SHAP", "UNSW-NB15", "FastAPI", "Docker"]
+    },
+    {
+      "title": "Containerized Database Automation on Kubernetes",
+      "description": "Eliminated manual database operations overhead by building a fully self-healing, GitOps-driven infrastructure for stateful workloads on Kubernetes.",
+      "highlights": [
+        "Built self-healing PostgreSQL/MongoDB orchestration on Kubernetes using Helm and GitOps practices.",
+        "Instrumented Prometheus/Grafana monitoring; provisioned infrastructure-as-code with Terraform for repeatable deployments."
+      ],
+      "environment": ["Kubernetes", "Helm", "Terraform", "PostgreSQL", "MongoDB", "Prometheus", "Grafana", "GitOps"]
+    },
+    {
+      "title": "Multilingual Text-to-Image Generator with Stable Diffusion",
+      "description": "Made text-to-image generation accessible to non-English speakers by removing the English-only bottleneck common to most diffusion-based image models.",
+      "highlights": [
+        "Developed multilingual visual-prompt interpreter using Stable Diffusion + XLM-R embeddings supporting 20+ languages; served via FastAPI with ONNX/CUDA inference (50% speed boost).",
+        "Optimized inference using ONNX and CUDA acceleration to make the system practical and responsive for real-world, real-time use."
+      ],
+      "environment": ["Python", "Stable Diffusion", "XLM-R", "FastAPI", "ONNX", "CUDA", "Multilingual NLP"]
+    }
+  ],
+  "githubProjects": [
+    {
+      "title": "gpt2",
+      "description": "Hands-on implementation and experimentation with the GPT-2 transformer architecture, exploring tokenization, attention, and text generation from the ground up.",
+      "language": "Jupyter Notebook",
+      "link": "https://github.com/varshith-0718/gpt2"
+    },
+    {
+      "title": "Deepseekarchitecture",
+      "description": "Exploration and implementation of the DeepSeek model architecture, studying its design choices around efficient attention and mixture-of-experts routing.",
+      "language": "Notebook",
+      "link": "https://github.com/varshith-0718/Deepseekarchitecture"
+    },
+    {
+      "title": "neuralnetfromscratchpractice",
+      "description": "A neural network built from scratch using NumPy to build first-principles intuition for forward propagation, backpropagation, and gradient descent.",
+      "language": "Jupyter Notebook",
+      "link": "https://github.com/varshith-0718/neuralnetfromscratchpractice"
+    },
+    {
+      "title": "GANpractice",
+      "description": "Practice implementation of Generative Adversarial Networks, training a generator-discriminator pair to synthesize realistic samples.",
+      "language": "Jupyter Notebook",
+      "link": "https://github.com/varshith-0718/GANpractice"
+    },
+    {
+      "title": "Tensorflowbasicspractice",
+      "description": "Practice notebooks covering TensorFlow fundamentals, from tensors and layers to training basic deep learning models.",
+      "language": "Jupyter Notebook",
+      "link": "https://github.com/varshith-0718/Tensorflowbasicspractice"
+    },
+    {
+      "title": "ASE-FINAL",
+      "description": "Final project for Advanced Software Engineering coursework, built as a JavaScript application applying software engineering best practices.",
+      "language": "JavaScript",
+      "link": "https://github.com/varshith-0718/ASE-FINAL"
     }
   ]
 }
