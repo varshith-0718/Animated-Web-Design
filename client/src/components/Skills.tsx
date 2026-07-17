@@ -10,7 +10,7 @@ export function Skills() {
     <Section id="skills">
       <Reveal>
         <div className="flex items-center gap-4 mb-12">
-          <span className="text-primary font-mono text-xl">04.</span>
+          <span className="text-primary font-mono text-xl">05.</span>
           <h2 className="text-3xl md:text-4xl font-bold">Skills & Technologies</h2>
           <div className="h-px bg-border flex-1 max-w-[200px]" />
         </div>
