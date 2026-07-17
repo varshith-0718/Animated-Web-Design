@@ -9,18 +9,141 @@
     }
   },
   "skills": [
-    { "category": "Programming", "items": ["Python", "SQL", "C++"] },
-    { "category": "ML & DL", "items": ["Scikit-learn", "TensorFlow", "PyTorch", "XGBoost", "LightGBM", "CatBoost", "BERT", "GPT Models", "Reinforcement Learning", "GRPO", "PPO", "Transformers", "Multimodal architectures"] },
-    { "category": "GenAI / LLMs", "items": ["OpenAI APIs", "Hugging Face Transformers", "LangChain", "LangGraph", "LangSmith", "CrewAI", "AutoGen", "RAG Architectures"] },
-    { "category": "AI Agents", "items": ["LangGraph Agents", "CrewAI Agents", "Rule-based Decision Agents", "Multi-Agent Evaluation Pipelines"] },
-    { "category": "Vector Databases", "items": ["FAISS", "Pinecone", "Chroma", "Milvus"] },
-    { "category": "ML Algorithms", "items": ["Regression", "Classification", "Ensemble Methods", "Gradient Boosting", "Clustering", "Time-Series Models", "CNN/RNN architectures", "Transformer-based models"] },
-    { "category": "Data Engineering", "items": ["PySpark", "Kafka", "Snowflake", "BigQuery", "Redshift", "ETL/ELT Design"] },
-    { "category": "MLOps & Automation", "items": ["MLflow", "Airflow", "Kubernetes", "Docker", "Terraform", "FastAPI", "GitHub Actions", "Azure DevOps", "n8n", "Cursor AI", "MCP"] },
-    { "category": "Cloud", "items": ["AWS S3/Lambda/ECS/SageMaker", "Azure ML/AKS/Azure OpenAI", "GCP BigQuery/Vertex AI"] },
-    { "category": "Evaluation & Safety", "items": ["SHAP", "LIME", "RAGAS", "BLEU/ROUGE", "ROC-AUC", "Prompt Safety Testing", "Bias Analysis"] },
-    { "category": "Visualization", "items": ["Tableau", "Power BI", "Plotly", "Matplotlib", "Seaborn"] },
-    { "category": "Security & Compliance", "items": ["HIPAA", "PII/PHI Redaction", "HITL Review Loops"] }
+    {
+      "category": "Programming",
+      "items": [
+        "Python",
+        "SQL",
+        "C++"
+      ]
+    },
+    {
+      "category": "ML & DL",
+      "items": [
+        "Scikit-learn",
+        "TensorFlow",
+        "PyTorch",
+        "XGBoost",
+        "LightGBM",
+        "CatBoost",
+        "BERT",
+        "GPT Models",
+        "Reinforcement Learning",
+        "GRPO",
+        "PPO",
+        "Transformers",
+        "Multimodal architectures"
+      ]
+    },
+    {
+      "category": "GenAI / LLMs",
+      "items": [
+        "OpenAI APIs",
+        "Hugging Face Transformers",
+        "LangChain",
+        "LangGraph",
+        "LangSmith",
+        "CrewAI",
+        "AutoGen",
+        "RAG Architectures"
+      ]
+    },
+    {
+      "category": "AI Agents",
+      "items": [
+        "LangGraph Agents",
+        "CrewAI Agents",
+        "Rule-based Decision Agents",
+        "Multi-Agent Evaluation Pipelines"
+      ]
+    },
+    {
+      "category": "Vector Databases",
+      "items": [
+        "FAISS",
+        "Pinecone",
+        "Chroma",
+        "Milvus"
+      ]
+    },
+    {
+      "category": "ML Algorithms",
+      "items": [
+        "Regression",
+        "Classification",
+        "Ensemble Methods",
+        "Gradient Boosting",
+        "Clustering",
+        "Time-Series Models",
+        "CNN/RNN architectures",
+        "Transformer-based models"
+      ]
+    },
+    {
+      "category": "Data Engineering",
+      "items": [
+        "PySpark",
+        "Kafka",
+        "Snowflake",
+        "BigQuery",
+        "Redshift",
+        "ETL/ELT Design"
+      ]
+    },
+    {
+      "category": "MLOps & Automation",
+      "items": [
+        "MLflow",
+        "Airflow",
+        "Kubernetes",
+        "Docker",
+        "Terraform",
+        "FastAPI",
+        "GitHub Actions",
+        "Azure DevOps",
+        "n8n",
+        "Cursor AI",
+        "MCP"
+      ]
+    },
+    {
+      "category": "Cloud",
+      "items": [
+        "AWS S3/Lambda/ECS/SageMaker",
+        "Azure ML/AKS/Azure OpenAI",
+        "GCP BigQuery/Vertex AI"
+      ]
+    },
+    {
+      "category": "Evaluation & Safety",
+      "items": [
+        "SHAP",
+        "LIME",
+        "RAGAS",
+        "BLEU/ROUGE",
+        "ROC-AUC",
+        "Prompt Safety Testing",
+        "Bias Analysis"
+      ]
+    },
+    {
+      "category": "Visualization",
+      "items": [
+        "Tableau",
+        "Power BI",
+        "Plotly",
+        "Matplotlib",
+        "Seaborn"
+      ]
+    },
+    {
+      "category": "Security & Compliance",
+      "items": [
+        "HIPAA",
+        "PII/PHI Redaction",
+        "HITL Review Loops"
+      ]
+    }
   ],
   "experiences": [
     {
@@ -34,7 +157,17 @@
         "Integrated Bark and MusicGen models for end-to-end audio synthesis with phoneme-aware vocal generation, reducing inference latency by 30%.",
         "Designed scalable inference workflows for lyric generation, sentiment classification, and audio rendering to support interactive user experiences."
       ],
-      "environment": ["Python", "GPT-2", "Bark", "MusicGen", "Hugging Face Transformers", "PyTorch", "NLP", "Sentiment Analysis", "Audio Synthesis"]
+      "environment": [
+        "Python",
+        "GPT-2",
+        "Bark",
+        "MusicGen",
+        "Hugging Face Transformers",
+        "PyTorch",
+        "NLP",
+        "Sentiment Analysis",
+        "Audio Synthesis"
+      ]
     },
     {
       "title": "Graduate Research Assistant | MLSecOps",
@@ -47,7 +180,17 @@
         "Developed a multi-objective evaluation framework measuring attack success rate, stealthiness, and reproducibility to benchmark prompt effectiveness.",
         "Proposed mitigation strategies and safety mechanisms for improving LLM robustness against adversarial prompt injection attacks."
       ],
-      "environment": ["Python", "Reinforcement Learning", "PPO", "Evolutionary Algorithms", "GPT-4", "Claude", "LLaMA", "Prompt Engineering", "LLM Safety Evaluation"]
+      "environment": [
+        "Python",
+        "Reinforcement Learning",
+        "PPO",
+        "Evolutionary Algorithms",
+        "GPT-4",
+        "Claude",
+        "LLaMA",
+        "Prompt Engineering",
+        "LLM Safety Evaluation"
+      ]
     },
     {
       "title": "Associate Data Scientist",
@@ -62,7 +205,18 @@
         "Developed interactive dashboards and reports to track sales performance and inventory health across 1,000+ retail locations.",
         "Optimized ETL workflows using SQL and Python, improving pipeline performance and reducing data latency for downstream analytics."
       ],
-      "environment": ["Python", "SQL", "Pandas", "NumPy", "BigQuery", "Cloud Storage", "Looker Studio", "Data Modeling", "Statistical Analysis", "ETL Pipelines"]
+      "environment": [
+        "Python",
+        "SQL",
+        "Pandas",
+        "NumPy",
+        "BigQuery",
+        "Cloud Storage",
+        "Looker Studio",
+        "Data Modeling",
+        "Statistical Analysis",
+        "ETL Pipelines"
+      ]
     }
   ],
   "projects": [
@@ -73,7 +227,16 @@
         "Designed 3-layer hybrid detection model (VAE + LSTM + XGBoost) on UNSW-NB15 dataset, achieving 93.6% precision and 35% fewer false positives vs. baseline.",
         "Integrated SHAP explainability for per-prediction feature attribution; deployed via FastAPI REST endpoint in a Dockerized backend."
       ],
-      "environment": ["Python", "VAE", "LSTM", "XGBoost", "SHAP", "UNSW-NB15", "FastAPI", "Docker"]
+      "environment": [
+        "Python",
+        "VAE",
+        "LSTM",
+        "XGBoost",
+        "SHAP",
+        "UNSW-NB15",
+        "FastAPI",
+        "Docker"
+      ]
     },
     {
       "title": "Containerized Database Automation on Kubernetes",
@@ -82,7 +245,16 @@
         "Built self-healing PostgreSQL/MongoDB orchestration on Kubernetes using Helm and GitOps practices.",
         "Instrumented Prometheus/Grafana monitoring; provisioned infrastructure-as-code with Terraform for repeatable deployments."
       ],
-      "environment": ["Kubernetes", "Helm", "Terraform", "PostgreSQL", "MongoDB", "Prometheus", "Grafana", "GitOps"]
+      "environment": [
+        "Kubernetes",
+        "Helm",
+        "Terraform",
+        "PostgreSQL",
+        "MongoDB",
+        "Prometheus",
+        "Grafana",
+        "GitOps"
+      ]
     },
     {
       "title": "Multilingual Text-to-Image Generator with Stable Diffusion",
@@ -91,45 +263,53 @@
         "Developed multilingual visual-prompt interpreter using Stable Diffusion + XLM-R embeddings supporting 20+ languages; served via FastAPI with ONNX/CUDA inference (50% speed boost).",
         "Optimized inference using ONNX and CUDA acceleration to make the system practical and responsive for real-world, real-time use."
       ],
-      "environment": ["Python", "Stable Diffusion", "XLM-R", "FastAPI", "ONNX", "CUDA", "Multilingual NLP"]
+      "environment": [
+        "Python",
+        "Stable Diffusion",
+        "XLM-R",
+        "FastAPI",
+        "ONNX",
+        "CUDA",
+        "Multilingual NLP"
+      ]
     }
   ],
   "githubProjects": [
     {
-      "title": "gpt2",
-      "description": "Hands-on implementation and experimentation with the GPT-2 transformer architecture, exploring tokenization, attention, and text generation from the ground up.",
-      "language": "Jupyter Notebook",
-      "link": "https://github.com/varshith-0718/gpt2"
-    },
-    {
       "title": "Deepseekarchitecture",
-      "description": "Exploration and implementation of the DeepSeek model architecture, studying its design choices around efficient attention and mixture-of-experts routing.",
-      "language": "Notebook",
+      "description": "No description provided.",
+      "language": "N/A",
       "link": "https://github.com/varshith-0718/Deepseekarchitecture"
     },
     {
       "title": "neuralnetfromscratchpractice",
-      "description": "A neural network built from scratch using NumPy to build first-principles intuition for forward propagation, backpropagation, and gradient descent.",
+      "description": "No description provided.",
       "language": "Jupyter Notebook",
       "link": "https://github.com/varshith-0718/neuralnetfromscratchpractice"
     },
     {
-      "title": "GANpractice",
-      "description": "Practice implementation of Generative Adversarial Networks, training a generator-discriminator pair to synthesize realistic samples.",
+      "title": "gpt2",
+      "description": "No description provided.",
       "language": "Jupyter Notebook",
-      "link": "https://github.com/varshith-0718/GANpractice"
+      "link": "https://github.com/varshith-0718/gpt2"
+    },
+    {
+      "title": "ASE-FINAL",
+      "description": "No description provided.",
+      "language": "JavaScript",
+      "link": "https://github.com/varshith-0718/ASE-FINAL"
     },
     {
       "title": "Tensorflowbasicspractice",
-      "description": "Practice notebooks covering TensorFlow fundamentals, from tensors and layers to training basic deep learning models.",
+      "description": "No description provided.",
       "language": "Jupyter Notebook",
       "link": "https://github.com/varshith-0718/Tensorflowbasicspractice"
     },
     {
-      "title": "ASE-FINAL",
-      "description": "Final project for Advanced Software Engineering coursework, built as a JavaScript application applying software engineering best practices.",
-      "language": "JavaScript",
-      "link": "https://github.com/varshith-0718/ASE-FINAL"
+      "title": "GANpractice",
+      "description": "No description provided.",
+      "language": "Jupyter Notebook",
+      "link": "https://github.com/varshith-0718/GANpractice"
     }
   ]
 }
