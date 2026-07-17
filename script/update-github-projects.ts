@@ -9,8 +9,8 @@ import { readFile, writeFile } from "fs/promises";
 import path from "path";
 
 const GITHUB_USERNAME = "varshith-0718";
-// Repos to hide from this section (e.g. the portfolio site itself)
-const EXCLUDED_REPOS = new Set(["Animated-Web-Design"]);
+// Repos to hide from this section
+const EXCLUDED_REPOS = new Set<string>([]);
 const MAX_REPOS = 9;
 
 const PORTFOLIO_JSON_PATH = path.resolve(
