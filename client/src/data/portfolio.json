@@ -277,43 +277,43 @@
   "githubProjects": [
     {
       "title": "Animated-Web-Design",
-      "description": "No description provided.",
+      "description": "Modern, animated personal portfolio website built with React, TypeScript, Tailwind CSS, and Framer Motion.",
       "language": "TypeScript",
       "link": "https://github.com/varshith-0718/Animated-Web-Design"
     },
     {
       "title": "Deepseekarchitecture",
-      "description": "No description provided.",
+      "description": "Exploration and implementation of concepts from the DeepSeek model architecture, focused on efficient attention and Mixture-of-Experts routing.",
       "language": "N/A",
       "link": "https://github.com/varshith-0718/Deepseekarchitecture"
     },
     {
       "title": "neuralnetfromscratchpractice",
-      "description": "No description provided.",
+      "description": "A neural network built from scratch using NumPy to build first-principles intuition for forward propagation, backpropagation, and gradient descent.",
       "language": "Jupyter Notebook",
       "link": "https://github.com/varshith-0718/neuralnetfromscratchpractice"
     },
     {
       "title": "gpt2",
-      "description": "No description provided.",
+      "description": "Hands-on implementation of a GPT-2-style language model, exploring tokenization, attention, and text generation from first principles.",
       "language": "Jupyter Notebook",
       "link": "https://github.com/varshith-0718/gpt2"
     },
     {
       "title": "ASE-FINAL",
-      "description": "No description provided.",
+      "description": "AI-based feedback analyzer — a full-stack app (Node API + FastAPI LLM service + React UI) for real-time feedback analysis.",
       "language": "JavaScript",
       "link": "https://github.com/varshith-0718/ASE-FINAL"
     },
     {
       "title": "Tensorflowbasicspractice",
-      "description": "No description provided.",
+      "description": "Comprehensive practice notebooks covering TensorFlow fundamentals through computer vision, transfer learning, and NLP.",
       "language": "Jupyter Notebook",
       "link": "https://github.com/varshith-0718/Tensorflowbasicspractice"
     },
     {
       "title": "GANpractice",
-      "description": "No description provided.",
+      "description": "Progressive GAN implementations — from basic image generation to conditional GANs with convolutional layers.",
       "language": "Jupyter Notebook",
       "link": "https://github.com/varshith-0718/GANpractice"
     }
